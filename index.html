@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Web</title>
+
+    <style>
+        .card {
+          border-radius: 15px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: 0.3s;
+        }
+        
+        .card:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card-body {
+          padding: 20px;
+        }
+        
+        .card-title {
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        
+        .card-text {
+          color: #555;
+        }
+        
+
+        @keyframes slideTop {
+            0%{
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            } 
+        }
+        
+        @keyframes slideRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+        
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+        
+            100%{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideBottom {
+            0% {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+        
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes zoomIn {
+            0%{
+                transform: scale(0);
+            }
+        
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes floatImage{
+            0%{
+                transform: translateY(0);
+            }
+        
+            50%{
+                transform: translateY(-24px);
+            }
+        
+            100%{
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes circleRotate{
+            0%{
+                transform: rotate(0);
+            }
+        
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        </style>
+
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">Sultan</a>
+
+        <nav class="navbar">
+            <a href="#" style="--i:1">Home</a>
+            <a href="#skill" style="--i:3">Skills</a>
+            <a href="#achievement" style="--i:5">Achievement</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-sci">
+            <a href="https://www.facebook.com/sultanfaid.amani"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sultan_f.a_/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sultan-faid-amani-4978a52a5/"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm Sultan Faid Amani</h1>
+            <h3>Backend Developer</h3>
+            <p>I'm a Student at SMK Wikrama Bogor who wants to become a programmer for game industries like bethesda, EA, Square Enix, Activision, etc.</p>
+            <a href="#" class="button">Hire Me</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="home.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<h1 id="skill" style="display:flex; justify-content:center; margin-bottom:5%;">My Skills</h1>
+
+
+<div class="card1">
+    <div class="card" style="width: 18rem; background-color:#1D267D;">
+        <img src="PHP.png" class="card-img-top" alt="..." style="margin-top:15px;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white;">PHP</h5>
+          <p class="card-text" style="color: white;">I possess advanced expertise in PHP, demonstrated by my ability to develop scalable web applications, optimize performance, and integrate complex functionalities seamlessly.</p>
+        </div>
+    </div>
+</div>
+<div class="card2">
+    <div class="card" style="width: 18rem; background-color:#1D267D;">
+        <img src="laravel.png" class="card-img-top" alt="..." style="width: 50%; margin-left:70px; margin-top:20px;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white;">Laravel</h5>
+          <p class="card-text" style="color: white;">I possess advanced expertise in Laravel, demonstrated through numerous successful projects where I've leveraged its MVC architecture to deliver scalable and efficient web applications.</p>
+        </div>
+    </div>
+</div>
+<div class="card3">
+    <div class="card" style="width: 18rem; background-color:#1D267D;">
+        <img src="MySQL.png" class="card-img-top" alt="..." style="margin-top: 7%;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white;">MySQL</h5>
+          <p class="card-text" style="color: white;">I possess advanced proficiency in MySQL, adeptly navigating complex database structures, optimizing query performance, ensuring data integrity, and designing efficient relational schemas.</p>
+        </div>
+    </div>
+</div>
+    <h1 id="achievement" style="display:flex; justify-content:center; margin-bottom:5%; margin-top:5%;">My Achievement</h1>
+
+    <div class="container mt-5 mb-5">
+        <div class="row" style="margin-left: 22%;">
+          <div class="col-md-4" style=" opacity: 0;
+          animation: slideRight 1s ease forwards;
+          animation-delay: 1.8s;">
+            <div class="card" style="background-color:#1D267D;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white;">Toeic Score</h5>
+                <p class="card-text" style="color: white; margin-bottom:22px;">I achieved a TOEIC score of 865, demonstrating my proficiency in both listening and reading comprehension in English. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" style=" opacity: 0;
+          animation: slideLeft 1s ease forwards;
+          animation-delay: 1.8s;">
+            <div class="card" style="background-color:#1D267D;">
+              <div class="card-body">
+                <h5 class="card-title" style="color: white;">Data Science Certificate</h5>
+                <p class="card-text" style="color: white; margin-bottom:20px;">I am certified in Data Science, having completed rigorous training and examinations that encompassed statistical analysis.</p>
+              </div>
+            </div>
+        </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      
+</body>
+</html>
